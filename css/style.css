@@ -1,0 +1,321 @@
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+.container {
+    width:80%;
+    margin:auto;
+}
+header {
+    background-color: #333;
+    padding:10px 0;
+}
+
+
+.header-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 0;
+}
+.header-content .brand {
+    font-size:32px;
+    text-decoration: none;
+    color:white;
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+}
+nav ul#user_info {
+    display:none;
+    align-items:center;
+}
+
+nav ul#user_info li {
+    position: relative;
+    margin:0 7px;
+}
+nav ul#user_info li i{
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+nav ul#user_info .carts-products {
+    position: absolute;
+    width:200px;
+    transform: translate(-42%,0);
+    background-color: white;
+    top:46px;
+    padding:10px;
+    border:1px solid green;
+    display:none;
+}
+
+nav ul#user_info .carts-products a {
+    background:darkgreen;
+    display:block;
+    color:white;
+    margin:0;
+    padding:0;
+    text-align: center;
+    padding:6px;
+    text-decoration: none;
+}
+
+nav ul#user_info li .badge {
+width:20px;
+height: 20px;
+color:white;
+background-color: red;
+text-align: center;
+display:block;
+position:absolute;
+border-radius: 50%;
+top:-10px;
+right:-10px;
+font-size:10px;
+line-height:20px;
+display:none;
+}
+
+
+nav li a{
+    display:block;
+    color:white;
+    min-width:5px;
+    margin:0 5px;
+    padding:5px;
+}
+
+
+
+/* *************** Form ******** */
+
+.section-form {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:40%;
+    text-align: center;
+    background:#bc6ff1;
+    padding:20px;
+
+
+}
+
+.section-form h2 {
+    font-size:50px;
+    letter-spacing: 2px;
+    color:#52057b;
+}
+
+.section-form form input {
+    display:block;
+    font-family: 'Varela Round', sans-serif;
+    width:100%;
+    margin:5px 0; 
+    height:40px;
+    padding:5px;
+    border:1px solid #ddd;
+    outline: 0;
+}
+
+.section-form form input[type="submit"]  {
+    font-size:25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}
+
+.section-form form input[type="submit"]:hover {
+    opacity:0.8;
+}
+
+#search {
+    width:100%;
+    height:40px;
+    display:block;
+    margin:10px 0;
+    padding:5px;
+    border:1px solid #b5b5b5;
+    border-radius: 5px;
+    font-size:15px;
+}
+
+
+/* Products */ 
+
+.products {
+    width:60%;
+    float:left;
+    margin:10px 0;
+
+}
+.products-filter {
+    width:35%;
+    float:right;
+    margin:10px 0;
+}
+
+#size-filter {
+    display:block;
+    margin:10px 0;
+    width:100%;
+    height:40px;
+
+}
+
+.product-item {
+    display:flex;
+    width:100%;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+    min-height:150px;
+}
+.product-item-actions {
+    flex:1;
+    text-align:right;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item-img {
+    width:25%;
+    margin-right:10px;
+}
+.product-item-desc {
+    margin-left:80px;
+
+}
+
+.product-item-desc p {
+    margin:8px 0;
+}
+
+.product-item-desc a{
+    display:block;
+    font: size 25px;
+    color:#333;
+    text-decoration:none;
+    cursor:pointer;
+    text-transform: capitalize;
+
+}
+.product-item .add-to-card {
+
+    display:block;
+    margin-left:auto;
+    background:darkgreen;
+    color:white;
+    border:0;
+    padding:10px 20px;
+    cursor:pointer;
+    font-size:14px;
+    font-family: 'Varela Round', sans-serif;
+
+}
+ 
+.product-item-actions .fav {
+    cursor:pointer;
+    display:block;
+    width:20px;
+    margin-left: auto;
+
+}
+
+.item-details img {
+width:100%;
+margin:10px 0 ;
+border:1px solid #333;
+padding:2px;
+height:400px;
+object-fit:cover;
+}
+
+.edit-product {
+    display:block;
+    margin-left:auto;
+    background:darkgreen;
+    color:white;
+    border:0;
+    padding:10px 20px;
+    cursor:pointer;
+    font-size:14px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+/*********/
+
+.create-product-icon {
+position:fixed;
+bottom:35px;
+right:35px;
+height:50px;
+width:50px;
+background-color:#52057b;
+color:white;
+border-radius: 50%;
+text-decoration-line: none;
+text-align:center;
+line-height: 50px;
+}
+
+
+.create-product-icon:hover {
+    opacity:0.8;
+}
+
+
+.i-qty {
+    display:inline-block;
+    width:15px;
+    height:16px;
+    border-radius:50%;
+    line-height: 16px;
+    text-align: center;
+    font-size:10px;
+    background:darkgreen;
+    color:white;
+}
+
+.user-avatar {
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    margin:10px 0;
+
+}
+
+
+#edit-profile-form input {
+    width:100%;
+    display:block;
+    margin:10px 0;
+    height:40px;
+
+}
+
+#edit-profile-form input[type=submit]{
+    cursor:pointer;
+    background:#333;
+    color:white;
+}
+
+
+/* lang */
+
+#en_lang , #ar_lang {
+    color:white;
+    cursor:pointer;
+}
