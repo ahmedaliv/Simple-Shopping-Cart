@@ -1,3 +1,6 @@
+# Shopping-Cart
+
+A Simple Shopping-Cart Made using [HTML5, CSS3, JS]
 
 ## Features
 It has the basic features of a shopping cart 
